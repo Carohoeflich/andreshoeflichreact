@@ -1,0 +1,50 @@
+nav {
+    position: fixed;
+    z-index: 90;
+    width: 100%;
+    height: 7vh;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+
+    ul {
+        text-align: center;
+    }
+
+    .menu {
+        display: flex;
+        width: 100%;
+        margin: 0;
+
+        a {
+            text-decoration: none;
+            transition: .5s ease;
+            color: $secondarycolor;
+        }
+
+
+        li {
+            display: block;
+            margin: 3px;
+            letter-spacing: .3vw;
+            text-transform: uppercase;
+            transition: .5 ease;
+            width: 100%;
+
+            &:hover a {
+                color: $accentcolor;
+            }
+
+            .active {
+                border-bottom: 2px solid $accentcolor;
+
+                & a {
+                    color: $accentcolor;
+                }
+            }
+        }
+    }
+}
+
+
+.navTest.active {
+    border-bottom: 2px solid $accentcolor;
+}

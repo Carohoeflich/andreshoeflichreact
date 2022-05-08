@@ -1,0 +1,25 @@
+.photos {
+    background: linear-gradient(to top, #cecece, #f8f8f8);
+    height: 100%;
+    width: 100%;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .col-2 {
+    padding: 6rem;
+  
+    img {
+      width: 30vw;
+      height: 60vh;
+      object-fit: cover;
+    }
+  
+    img:nth-of-type(1) {
+      filter: grayscale(1);
+    }
+  
+  }

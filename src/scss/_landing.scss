@@ -1,0 +1,132 @@
+$primarycolor: #000;
+$secondarycolor: #fff;
+$accentcolor:rgb(234, 238, 15);
+$graycolor: rgb(158, 157, 157);
+
+.header {
+    width: 100%;
+    height: 100%;
+
+    .container-scroll {
+        z-index: 90;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        animation: up-n-down 1s ease infinite;
+        margin: 25px 25px;
+
+        P {
+            display: flex;
+            justify-content: right;
+            opacity: .5;
+        }
+
+        img {
+            width: 40px;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 14px;
+            color: $secondarycolor;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+.landingButton {
+	box-shadow: 3px 4px 0px 0px $accentcolor;
+	background:linear-gradient(to bottom, $secondarycolor 5%, $secondarycolor 100%);
+	background-color:$secondarycolor;
+	border-radius:33px;
+	border:1px solid $accentcolor;
+	display:inline-block;
+	color: $primarycolor;
+	font-family:Arial;
+	font-size:17px;
+	padding:13px 18px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px $graycolor;
+}
+.landingButton:hover {
+	background:linear-gradient(to bottom, $secondarycolor 5%, $secondarycolor 100%);
+	background-color:$secondarycolor;
+}
+.landingButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+/* ========== animation of the scrolling icon ============== */
+@keyframes up-n-down {
+    0% {
+        transform: translateY(10px);
+    }
+
+    25% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+.title {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    padding: 12rem 0;
+    color: $secondarycolor;
+    font-size: 1.5vw;
+    text-align: center;
+
+    h1 {
+        z-index: 10;
+        font-family: 'Poppins', sans-serif;
+        color: $secondarycolor;
+        text-transform: uppercase;
+        letter-spacing: 3vw;
+        line-height: 1.2;
+        font-size: 3vw;
+        text-align: center;
+
+        span {
+            display: block;
+            font-family: 'Poppins', sans-serif;
+            font-size: 10vw;
+            letter-spacing: -0.7vw;
+            color: $accentcolor;
+        }
+    }
+}
+
+
+
+.bg-video {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    background-size: 100%;
+    background-position: center;
+    background-size: contain;
+}
+
+.overlay {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background: rgba($primarycolor, $alpha: .7);
+}
