@@ -1,0 +1,141 @@
+.landing{
+    max-width: 100vw;
+    height: 90vh;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: $secondarycolor;
+}
+
+.container {
+    max-width: 100vw;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    .small-container {
+        max-width: 60vw;
+        margin: auto;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: -30px;
+}
+
+
+
+nav {
+    flex: 1;
+    text-align: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+     ul {
+        display: inline-block;
+        list-style-type: none;
+
+         li {
+            display: inline-block;
+            margin: 10px 20px;
+
+             a {
+                text-decoration: none;
+                color: $secondarycolor;
+                text-transform: uppercase;
+
+                &:hover {
+                    color: $accentcolor;
+                }
+
+                 img {
+                    align-items: center;
+                    vertical-align: middle;
+                    width: 20px;
+                    height: 20px;
+                    &:hover{
+                        filter: invert(69%) sepia(92%) saturate(432%) hue-rotate(13deg) brightness(1112%) contrast(96%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.slide {
+     img{
+    background-color: $primarycolor;
+    z-index: 9;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    animation-duration: 4s;
+    }
+}
+
+button {
+    animation-duration: 2s;
+}
+
+
+
+h1{
+    margin-bottom: 5vh;
+    font-size: 40px;
+}
+
+.col-2{
+    min-width: 300px;
+    align-items: center;
+    margin-left: auto;
+     img {
+        width: 30vw;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+     a{
+        text-decoration: none;
+        font-size: 25px;
+         button {
+            cursor: pointer;
+            color: $accentcolor;
+            margin-top: 20px;
+            padding: 10px;
+            outline: 0;
+            width: 150px;
+            background-color: $primarycolor;
+            border:none;
+            animation-duration: 7s;
+        }
+    }
+}
+
+
+.wave {
+    position:inherit;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: -2;
+}
+
+.wave svg {
+    display: block;
+    width: calc(162% + 1.3px);
+    height: 184px;
+}
+
+.wave .shape-fill {
+    fill: $primarycolor;
+}

@@ -38,7 +38,7 @@ window.addEventListener('scroll', function(event){
     <li><a class="navTest " href="#about">About</a></li>
     <li><a class="navTest " href="#music">Music</a></li>
     <li><a class="navTest " href="#contact">Contact</a></li>
-    <li><a href="/Shop/shop.html">Shop</a></li>
+    <li><a href="/Shop">Shop</a></li>
   </ul>
 </nav>
   )

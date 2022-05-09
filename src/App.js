@@ -1,28 +1,20 @@
 import * as React from "react";
 import "./scss/App.scss";
 import { Routes, Route } from "react-router-dom";
-import Nav from "./components/Nav/Nav.js";
-import Landing from "./components/Landing/landing.js";
-import About from "./components/About/about.js";
-import Music from "./components/Music/music";
-import Photos from "./components/Photos/photos";
-import Contact from "./components/Contact/contact";
+import Home from "./pages/Home/";
+import Shoppage from "./pages/Shop";
+import Login from "./pages/Login"
 
 
 
 function App() {
    return (
     <>
-    <Nav></Nav>
-    <Landing></Landing>
-    <About></About>
-    <Music></Music>
-    <Photos></Photos>
-    <Contact></Contact>
       <Routes>
-        <Route path="/" element={<Nav />} />
+      <Route path="/" element={<Home />} />
+      <Route path="/Shop" element={<Shoppage />} />
+      <Route path="/Login" element={<Login />} />
       </Routes>
-
     </>
   );
 }

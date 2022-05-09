@@ -1,0 +1,16 @@
+
+footer {
+    text-align: center;
+    bottom: 0;
+    color: $secondarycolor;
+    background-color: $primarycolor;
+    height: 200px;
+     img{
+        width: 30px;
+        height: 30px;
+        filter: invert(95%) sepia(100%) saturate(14%) hue-rotate(213deg) brightness(104%) contrast(104%);
+        &:hover{
+            filter: invert(69%) sepia(92%) saturate(432%) hue-rotate(13deg) brightness(1112%) contrast(96%);
+        }
+    }
+}
