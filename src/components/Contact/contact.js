@@ -5,6 +5,7 @@ import fb from '../../assets/img/Iconos/facebook.svg'
 import ig from '../../assets/img/Iconos/instagram.svg'
 import twt from '../../assets/img/Iconos/twitter.svg'
 import spotify from '../../assets/img/Iconos/spotify.svg'
+import Mailer from './mailer'
 
 const Contact = () => {
   return (
@@ -26,29 +27,7 @@ const Contact = () => {
         </div>
       </div>
       <div class="right">
-        <div class="contact-forms">
-          <div class="wrapper">
-            <h2>MESSAGE ME</h2>
-            <form action="" method="POST">
-              <div class="form-group">
-                <label for="name">Full Name</label>
-                <input type="text" name="Name" id="name" placeholder="Write your name" required minlength="3"
-                  maxlength="40" />
-              </div>
-              <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="email" name="Email" id="email" placeholder="email" required />
-              </div>
-              <div class="form-group">
-                <label for="message">Message</label>
-                <textarea name="Message" id="message" rows="5" placeholder="Type your message"></textarea>
-              </div>
-              <div class="form-group">
-                <button type="submit" class="submit">Send <i class="far fa-envelope"></i></button>
-              </div>
-            </form>
-          </div>
-        </div>
+        <Mailer></Mailer>
         <div class="right-img">
           <img src={ContactImg2} alt=""/></div>
       </div>

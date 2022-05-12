@@ -13,9 +13,9 @@ const Navbar = () => {
         <ul>
             <li><a href="/">Go back←</a></li>
             <li><a href="#product">Products</a></li>
-            <li><a href="#">Account</a></li>
+            <li><a href="/Account">Account</a></li>
             <li><a href="/Login">Log In</a></li>
-            <li><a href="#"><img src={ShoppingCartImg} alt=""/></a></li>
+            <li><a href="/"><img src={ShoppingCartImg} alt=""/></a></li>
         </ul>
     </nav>
     </div>

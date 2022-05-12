@@ -1,19 +1,15 @@
 import React from 'react'
+import { useAuth0 } from '@auth0/auth0-react';
 
-const LoginC = () => {
+const LoginButton = () => {
+  const { loginWithRedirect } = useAuth0();
+
   return (
-    <div class="loginbox">
-            <h1>Log in</h1>
-            <p>Username</p>
-            <input type="text" id="username" placeholder="Enter Username Here"/>
-            <p>Password</p>
-            <input type="password" id="password" placeholder="Enter Password"/><br/>
-            <button id="loginbutton">Login</button><br/>
-            <p class="error">Error. Please enter correct Username and Password.</p>
-            <a href="#">Lost password?</a><br/>
-            <a href="#">Don't have an account? Register here.</a>
-        </div>
+    <div className='loginbox'>
+    <h1>Login Page</h1>
+  <button onClick={() => loginWithRedirect()} id="loginbutton">Login</button>
+  </div>
   )
 }
 
-export default LoginC
+export default LoginButton
