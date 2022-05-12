@@ -1,4 +1,13 @@
 import React from 'react'
+import Brand1 from '../../assets/img/logo-godrej.png'
+import Brand2 from '../../assets/img/logo-coca-cola.png'
+import Brand3 from '../../assets/img/logo-oppo.png'
+import Brand4 from '../../assets/img/logo-paypal.png'
+import Brand5 from '../../assets/img/logo-philips.png'
+
+
+
+
 
 const Brands = () => {
   return (
@@ -7,19 +16,19 @@ const Brands = () => {
         <div class="small-container">
             <div class="row">
                 <div class="col-5">
-                    <img src="/Shop/shop-img/logo-godrej.png" alt=""/>
+                    <img src={Brand1} alt=""/>
                 </div>
                 <div class="col-5">
-                    <img src="/Shop/shop-img/logo-coca-cola.png" alt=""/>
+                    <img src={Brand2}  alt=""/>
                 </div>
                 <div class="col-5">
-                    <img src="/Shop/shop-img/logo-oppo.png" alt=""/>
+                    <img src={Brand3}  alt=""/>
                 </div>
                 <div class="col-5">
-                    <img src="/Shop/shop-img/logo-paypal.png" alt=""/>
+                    <img src={Brand4}  alt=""/>
                 </div>
                 <div class="col-5">
-                    <img src="/Shop/shop-img/logo-philips.png" alt=""/>
+                    <img src={Brand5}  alt=""/>
                 </div>
             </div>
         </div>
