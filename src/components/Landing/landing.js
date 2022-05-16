@@ -18,7 +18,7 @@ const Landing = () => {
         Andrés
         <span>Hoeflich</span>
       </h1>
-      <a href='#contact' className='landingButton'>Click for More</a>
+      {/* <a href='#contact' className='landingButton'>Click for More</a> */}
     </div>
     <div class="container-scroll">
       <p><a href="#about">Scroll<img src={MouseScroll} alt="" /></a></p>
